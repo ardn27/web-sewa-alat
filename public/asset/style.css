@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #FFF6E9;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.navbar{
+    background: #E72929;
+}
+
+.navbar-brand{
+    color: #DCF2F1;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 25rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.button-search{
+    margin-top: 1rem;
+}
+
+.kategori-dropdown {
+    padding: 0; /* Menghapus padding */
+    border: none; /* Menghapus border */
+    box-shadow: none; /* Menghapus shadow */
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem; /* Atur padding */
+    color: #333; /* Atur warna teks */
+    text-decoration: none; /* Hilangkan underline */
+    display: block; /* Tampilkan sebagai block */
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Warna latar saat hover */
+}
+
+.logo{
+    padding: 5px;
+}
+
+.services-title{
+    opacity: 0.7;
+}
+
+.logo-title:hover{
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+.logo-title{
+   color: #BE3144;
+   font-weight: bold;
+   transition: transform 0.3s ease;
+}
+
+
+
+.card-layanan{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-layanan:hover{
+    transform: translateY(-10px);
+    border: none;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
+.card-layanan:hover .card-body .card-title {
+    color: #1d1d1d;
+}
+
+.card-layanan-paket{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-layanan-paket.img{
+    max-width: 3rem;
+    padding: 1rem;
+    object-fit: cover;
+}
+.card-layanan-paket:hover{
+    transform: translateY(-10px);
+    border: none;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
+
+.card-layanan-paket:hover .card-title {
+    color: #1d1d1d;
+}
+
+.card-body{
+    height: 4rem;
+}
+
+.list-group-item:hover{
+    background: #BE3144;
+}
+
+.card-custom{
+    width: 10rem;
+}
+
+.whatsapp-float {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .whatsapp-float i {
+    font-size: 24px;
+  }
+
+  .card-text{
+    opacity: 0.8;
+  }
+
+
+  .scroll-card{
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .header-categories{
+    background-image: url('../asset/img/header.png');
+    background-size: cover; /* Untuk mengatur gambar agar mengisi area background dengan baik */
+    background-repeat: no-repeat; /* Untuk mencegah gambar diulang di latar belakang */
+    background-position: center;
+    margin-top: 7rem;
+  }
+
+  .carousel-inner{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+
+#searchDropdown {
+    position: absolute;
+    width: 18rem;
+    right: 30;
+    top: 80%;
+    left: auto; /* Ini menghilangkan pengaturan left yang mungkin telah diberikan sebelumnya */
+    z-index: 1000; /* Anda bisa menyesuaikan nilai z-index sesuai kebutuhan */
+}
+
+.kategori-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-kategori{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    width: 7rem;
+    height: 3rem;
+    border: 2px solid #1d1d1d;
+    opacity: 0.8;
+    transition: 0.3s ease-in;
+
+}
+
+.button-kategori:hover{
+    background-color: #1d1d1d;
+    color: #fbfbfb;
+    border: 2px solid #BE3144;
+}
+
+.card-package{
+    width: 16rem;
+    height: 22rem;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-package img{
+    max-width: 13rem;
+    object-fit: contain;
+}
+
+.card-package-body{
+    display: flex;
+    height: 5rem;
+    color: #1d1d1d;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.container-bts{
+    width: 100%;
+    overflow-y: auto;
+}
+
+.embed-responsive{
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.embed-responsive-item {
+    flex: 0 0 auto;         /* Agar iframe tetap proporsional */
+}
+
+
+#filterForm {
+    display: flex;
+    margin-left: 9rem;
+    width: 17rem;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-select {
+    width: 12rem;
+}
+
+/* search results */
+.dropdown-menu {
+    max-width: 45rem;
+    margin-left: 4rem;
+    max-height: 300px; /* Set the desired height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+
+
+
+
